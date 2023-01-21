@@ -162,7 +162,41 @@ class Ui_MainWindow(object):
             MainWindow.hide()
 
 
+class Menu_window(object):
+    def setupUi(self, menushka):
+        menushka.setObjectName("menushka")
+        menushka.resize(800, 600)
+        self.centralwidget = QtWidgets.QWidget(menushka)
+        self.centralwidget.setObjectName("centralwidget")
+        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton.setGeometry(QtCore.QRect(210, 370, 400, 100))
+        self.pushButton.setStyleSheet("font: 36pt \"Swis721 Hv BT\";")
+        self.pushButton.setObjectName("pushButton")
+        self.pushButton.clicked.connect(self.start)
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(40, 30, 731, 100))
+        self.label.setStyleSheet("font: 28pt \"MS Shell Dlg 2\";")
+        self.label.setObjectName("label")
+        menushka.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(menushka)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
+        self.menubar.setObjectName("menubar")
+        menushka.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(menushka)
+        self.statusbar.setObjectName("statusbar")
+        menushka.setStatusBar(self.statusbar)
 
+        self.retranslateUi(menushka)
+        QtCore.QMetaObject.connectSlotsByName(menushka)
+
+    def retranslateUi(self, menushka):
+        _translate = QtCore.QCoreApplication.translate
+        menushka.setWindowTitle(_translate("menushka", "menushka"))
+        self.pushButton.setText(_translate("menushka", "Start"))
+        self.label.setText(_translate("menushka", "Если хочешь начать гонку, нажми \"Start\""))
+    def start(self):
+        MainWindow.show()
+        menushka.hide()
 
 if __name__ == "__main__":
     import sys
@@ -173,5 +207,10 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     i = i_MainWindow()
     i.setupUi(Window)
-    MainWindow.show()
+    menushka = QtWidgets.QMainWindow()
+    menu = Menu_window()
+    menu.setupUi(menushka)
+    menushka.show()
+    # MainWindow.show()
     sys.exit(app.exec_())
+
