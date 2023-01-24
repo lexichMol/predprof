@@ -191,7 +191,7 @@ class Menu_window(object):
 
     def retranslateUi(self, menushka):
         _translate = QtCore.QCoreApplication.translate
-        menushka.setWindowTitle(_translate("menushka", "menushka"))
+        menushka.setWindowTitle(_translate("menushka", "menu"))
         self.pushButton.setText(_translate("menushka", "Start"))
         self.label.setText(_translate("menushka", "Если хочешь начать гонку, нажми \"Start\""))
     def start(self):
@@ -211,6 +211,5 @@ if __name__ == "__main__":
     menu = Menu_window()
     menu.setupUi(menushka)
     menushka.show()
-    # MainWindow.show()
     sys.exit(app.exec_())
 
