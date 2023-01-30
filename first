@@ -23,7 +23,6 @@ class i_MainWindow(object):
         self.pushButton.setObjectName("pushButton")
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_2.setGeometry(QtCore.QRect(700, 510, 91, 41))
-        self.pushButton_2.clicked.connect(self.start)
         self.pushButton_2.setObjectName("pushButton_2")
         self.pushButton_2.clicked.connect(self.back)
         self.lineEdit = QtWidgets.QLineEdit(self.centralwidget)
@@ -74,9 +73,28 @@ class i_MainWindow(object):
         except:
             pass
     def start(self, MainWindow):
-        self.widge.show()
-        self.widge.plot([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [30, 32, 34, 32, 33, 31, 29, 32, 35, 45])
-
+        try:
+            if self.lineEdit_2.text() == "" or self.lineEdit.text() == "":
+                error = QMessageBox()
+                error.setWindowTitle("ошибка")
+                error.setText("выберите количество гонщиков")
+                error.setIcon((QMessageBox.Warning))
+                error.setStandardButtons(QMessageBox.Ok)
+                error.exec_()
+            else:
+                self.widge.show()
+                self.widge.plot([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [30, 32, 34, 32, 33, 31, 29, 32, 35, 45])
+        except:
+            if self.lineEdit.text() == "":
+                error = QMessageBox()
+                error.setWindowTitle("ошибка")
+                error.setText("выберите количество гонщиков")
+                error.setIcon((QMessageBox.Warning))
+                error.setStandardButtons(QMessageBox.Ok)
+                error.exec_()
+            else:
+                self.widge.show()
+                self.widge.plot([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [30, 32, 34, 32, 33, 31, 29, 32, 35, 45])
 
 
 
