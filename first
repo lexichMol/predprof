@@ -203,7 +203,7 @@ class Menu_window(object):
         self.pushButton.setGeometry(QtCore.QRect(210, 370, 400, 100))
         self.pushButton.setStyleSheet("font: 36pt \"Swis721 Hv BT\";")
         self.pushButton.setObjectName("pushButton")
-        self.pushButton.clicked.connect(self.start_menu)
+        self.pushButton.clicked.connect(self.start_MainWindow)
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(40, 30, 731, 100))
         self.label.setStyleSheet("font: 28pt \"MS Shell Dlg 2\";")
@@ -226,7 +226,7 @@ class Menu_window(object):
         menu_qt.setWindowTitle(_translate("menu_qt", "menu"))
         self.pushButton.setText(_translate("menu_qt", "Start"))
         self.label.setText(_translate("menu_qt", "Если хочешь начать гонку, нажми \"Start\""))
-    def start_menu(self):
+    def start_MainWindow(self):
         MainWindow.show()
         menu_qt.hide()
 
