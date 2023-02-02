@@ -1,1 +1,55 @@
-<mxfile host="app.diagrams.net" modified="2023-02-01T07:11:38.934Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="azL4EKA8gnf7ihuEekXP" version="20.8.14" type="github"><diagram name="Страница 1" id="AW6baCjE_n6z2vz3k2Be">7Vrbbts4EP0aPdbQ1ZfH2Er3gs1u0Tw0fSoYi5aJyqJB0bW9X79DkbQo0k6c1JayRYCAIYf3M4fDGcpeNFvtfmNovbyjGS680M92XpR6YRjEUQz/hGQvJaPxSApyRjLVqBHck3+xEvpKuiEZrloNOaUFJ+u2cE7LEs95S4YYo9t2swUt2rOuUY4dwf0cFa70C8n4UkrH4aiR/45JvtQzB8OJrFkh3VjtpFqijG4NUXTrRTNGKZe51W6GCwGexkX2+3ii9rAwhkt+Tof95z+3S/pH+eDT5O/bfyYPN3PyQWnnByo2asNe6nuTVKRT30sDD/Sl8pBO6/RWbYjvNUowEygECtPtknB8v0ZzUbMFToBsyVcFlALIqukw43h3ch/BAR2gFaYrzNkemqgO0VABqhil8d026gm0bGmoJlEypBiRH0ZuQIOMwu0FGCYOhne43DgYMbopMywG8nvBKfDPBGp4LaD0mTaQqjhi/Bun31bHIIPNw5qmFWf0O57RgjKQl7QURFuQorBEqCB5CcUCL0Q3gR6Bk3yjxCuSZWLkaQWwkzL/q26Wxo3kswJBiCh0XxT1gV1CRwwjTNeUlLxGJZnCH2xn5g8SL4G1zqAcNGX4E80Zn9ESlo9IrTOMKr7FlVgcoxxx9FjvtBs+xMOkzYexy4fJETpEV6PD8LjxqdNpqEyNSMFKDdFKQFI+VusajmEhUHxkkMtFrm53Y/SRkrFhwpI6H9SpOYd/YrTIGC2te030mNZcocNcMPZrkQX1oKLABc0ZWglKYEYAPczsuk9NxXNcWJAd1jflhbgRWrYiOteoXs9WjF5ADt/QqdTOR61ZeW+Zd1hiSGLd7P+tvjh5a+oLXVN/B0bwCymFD/TWrsaDt9kfXqGDF98DBUOfLiBhAoy3hloc947aEffVcU3L7EbEAVCaF6iqyLwNTBtF6WpoT1/U4x3hD6pW5L+KPFzyspTujKp0rwsl7O7BLBi9RLHpVpd0P7l4nDkhiaUi2CDdsDk+g1DgX+WYP3tSXaUbSk2e8KYZLhAnP9oLPqZoNcMn4UIZF49lueKxxRW5UdXLjG7sgSJrIGsciYMzDlAD7Y1mysM7vV7fmmbkP70sq71eV8N6uYLmDBxU8BPHwo1ILn4szqVqX8Q6EMlS1IuJlVjESs5k1sWU6TpCMmjKxYOLo9f3kOmCN14SWCSauDfe+AiHrxYyheMOLrzD5dXcV19b19XPXl7P3kkyMuzNdFhaD19rOmLbzQy7NR2R61Rezz0axP7YcJF03QkHCQpGyGQ5TYO4RbwP/sCHcPBp9tUle8hL+lP+udwd9epPxW3KRZNXc7f9WhR1zd0uXftBFIcX4648BiZ5o6hn8uqXtueDgfCXIO/hHVMP1LHPFnXggDfkTc6n7lMmdti3idVPfu8s7YilrjM5RfPvDlPfQ4oLhhSB/VSb9BxSRJMObFX/IUXSp8mIw7bSXx1QjKyAoluDoe3TL06Vfl9Eba4E9uv5a8kSBB2zJXDYIh+ujn7MeL9kLvmlZmwFb32/W8XuS0TK0PbEG2bXH7bst+Lkih+2oNj85EseteaHc9Htfw==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-02-02T08:59:49.889Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="7dJNx-Tvh0B4aDC-RyFb" version="20.8.15" type="github">
+  <diagram name="Страница 1" id="AW6baCjE_n6z2vz3k2Be">
+    <mxGraphModel dx="1434" dy="787" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="b-lxnJPs-osFh1ZnWSlQ-1" value="Menu_Window" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="348" y="50" width="126" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b-lxnJPs-osFh1ZnWSlQ-2" value="Ui_MainWindow" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b-lxnJPs-osFh1ZnWSlQ-3" value="MainWindow_2" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b-lxnJPs-osFh1ZnWSlQ-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.192;exitY=-0.05;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.192;entryY=1.05;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="b-lxnJPs-osFh1ZnWSlQ-3" target="b-lxnJPs-osFh1ZnWSlQ-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="360" as="sourcePoint" />
+            <mxPoint x="380" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-lxnJPs-osFh1ZnWSlQ-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="b-lxnJPs-osFh1ZnWSlQ-2" target="b-lxnJPs-osFh1ZnWSlQ-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="360" as="sourcePoint" />
+            <mxPoint x="450" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-lxnJPs-osFh1ZnWSlQ-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="110" as="sourcePoint" />
+            <mxPoint x="450" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-lxnJPs-osFh1ZnWSlQ-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.192;exitY=-0.05;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.192;entryY=1.05;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="379.99999999999994" y="200" as="sourcePoint" />
+            <mxPoint x="379.99999999999994" y="116" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-lxnJPs-osFh1ZnWSlQ-8" value="start_Ui_MainWindow" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="140" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b-lxnJPs-osFh1ZnWSlQ-9" value="start_MainWindow_2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="300" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b-lxnJPs-osFh1ZnWSlQ-10" value="back" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="300" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b-lxnJPs-osFh1ZnWSlQ-11" value="menu" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="140" width="80" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
