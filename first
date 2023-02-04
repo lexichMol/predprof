@@ -23,6 +23,7 @@ class MainWindow_2(object):
         self.pushButton.setObjectName("pushButton")
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_2.setGeometry(QtCore.QRect(700, 510, 91, 41))
+        self.pushButton_2.clicked.connect(self.start)
         self.pushButton_2.setObjectName("pushButton_2")
         self.pushButton_2.clicked.connect(self.back)
         self.lineEdit = QtWidgets.QLineEdit(self.centralwidget)
@@ -35,7 +36,7 @@ class MainWindow_2(object):
         self.lineEdit.raise_()
         self.pushButton.raise_()
         self.pushButton_2.raise_()
-        self.pushButton.clicked.connect(self.start_MainWindow_2)
+        self.pushButton.clicked.connect(self.start)
         self.label.raise_()
 
         self.widge = PlotWidget(self.centralwidget)
@@ -72,29 +73,10 @@ class MainWindow_2(object):
             self.lineEdit_2.deleteLater()
         except:
             pass
-    def start_MainWindow_2(self, MainWindow):
-        try:
-            if self.lineEdit.text() == "" or self.lineEdit_2.text() == "":
-                error = QMessageBox()
-                error.setWindowTitle("ошибка")
-                error.setText("впишите номера гонщиков")
-                error.setIcon((QMessageBox.Warning))
-                error.setStandardButtons(QMessageBox.Ok)
-                error.exec_()
-            else:
-                self.widge.show()
-                self.widge.plot([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [30, 32, 34, 32, 33, 31, 29, 32, 35, 45])
-        except:
-            if self.lineEdit.text() == "":
-                error = QMessageBox()
-                error.setWindowTitle("ошибка")
-                error.setText("впишите номера гонщиков")
-                error.setIcon((QMessageBox.Warning))
-                error.setStandardButtons(QMessageBox.Ok)
-                error.exec_()
-            else:
-                self.widge.show()
-                self.widge.plot([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [30, 32, 34, 32, 33, 31, 29, 32, 35, 45])
+    def start(self, MainWindow):
+        self.widge.show()
+        self.widge.plot([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [30, 32, 34, 32, 33, 31, 29, 32, 35, 45])
+
 
 
 
@@ -119,10 +101,16 @@ class Ui_MainWindow(object):
         self.label.setGeometry(QtCore.QRect(230, 10, 261, 91))
         self.label.setStyleSheet("font: 20pt \"MS Shell Dlg 2\";")
         self.label.setObjectName("label")
-        self.start = QtWidgets.QPushButton(self.centralwidget)
-        self.start.setGeometry(QtCore.QRect(580, 260, 161, 51))
-        self.start.setObjectName("start")
-        self.start.clicked.connect(self.start_mainwindow)
+        self.Button = QtWidgets.QPushButton(self.centralwidget)
+        self.Button.setGeometry(QtCore.QRect(580, 260, 161, 51))
+        self.Button.setObjectName("start")
+        self.Button.clicked.connect(self.start_MainWindow_2)
+
+        self.Button_2 = QtWidgets.QPushButton(self.centralwidget)
+        self.Button_2.setGeometry(QtCore.QRect(580, 360, 161, 51))
+        self.Button_2.setObjectName("start")
+        self.Button_2.clicked.connect(self.menu)
+
         self.radioButton_2 = QtWidgets.QRadioButton(self.centralwidget)
         self.radioButton_2.setGeometry(QtCore.QRect(40, 300, 151, 61))
         self.radioButton_2.setStyleSheet("font: 20pt \"MS Shell Dlg 2\";")
@@ -155,11 +143,11 @@ class Ui_MainWindow(object):
         self.type_z.setItemText(5, _translate("MainWindow", "battle for 3rd place "))
         self.type_z.setItemText(6, _translate("MainWindow", "final"))
         self.label.setText(_translate("MainWindow", "Выберите тип заезда"))
-        self.start.setText(_translate("MainWindow", "начать"))
+        self.Button.setText(_translate("MainWindow", "начать"))
+        self.Button_2.setText(_translate("MainWindow", "Вернуться"))
         self.radioButton_2.setText(_translate("MainWindow", "2 гонщика"))
         self.radioButton.setText(_translate("MainWindow", "1 гонщик"))
-
-    def start_mainwindow(self):
+    def start_MainWindow_2(self):
         if self.radioButton.isChecked() == self.radioButton_2.isChecked():
             error = QMessageBox()
             error.setWindowTitle("ошибка")
@@ -191,13 +179,16 @@ class Ui_MainWindow(object):
 
             Window.show()
             MainWindow.hide()
+    def menu(self):
+        menushka.show()
+        MainWindow.hide()
 
 
 class Menu_window(object):
-    def setupUi(self, menu_qt):
-        menu_qt.setObjectName("menu_qt")
-        menu_qt.resize(800, 600)
-        self.centralwidget = QtWidgets.QWidget(menu_qt)
+    def setupUi(self, menushka):
+        menushka.setObjectName("menushka")
+        menushka.resize(800, 600)
+        self.centralwidget = QtWidgets.QWidget(menushka)
         self.centralwidget.setObjectName("centralwidget")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton.setGeometry(QtCore.QRect(210, 370, 400, 100))
@@ -208,43 +199,39 @@ class Menu_window(object):
         self.label.setGeometry(QtCore.QRect(40, 30, 731, 100))
         self.label.setStyleSheet("font: 28pt \"MS Shell Dlg 2\";")
         self.label.setObjectName("label")
-        menu_qt.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(menu_qt)
+        menushka.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(menushka)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
         self.menubar.setObjectName("menubar")
-        menu_qt.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(menu_qt)
+        menushka.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(menushka)
         self.statusbar.setObjectName("statusbar")
-        menu_qt.setStatusBar(self.statusbar)
+        menushka.setStatusBar(self.statusbar)
 
-        self.retranslateUi(menu_qt)
-        QtCore.QMetaObject.connectSlotsByName(menu_qt)
+        self.retranslateUi(menushka)
+        QtCore.QMetaObject.connectSlotsByName(menushka)
 
 
-    def retranslateUi(self, menu_qt):
+    def retranslateUi(self, menushka):
         _translate = QtCore.QCoreApplication.translate
-        menu_qt.setWindowTitle(_translate("menu_qt", "menu"))
-        self.pushButton.setText(_translate("menu_qt", "Start"))
-        self.label.setText(_translate("menu_qt", "Если хочешь начать гонку, нажми \"Start\""))
+        menushka.setWindowTitle(_translate("menushka", "menu"))
+        self.pushButton.setText(_translate("menushka", "Start"))
+        self.label.setText(_translate("menushka", "Если хочешь начать гонку, нажми \"Start\""))
     def start_MainWindow(self):
         MainWindow.show()
-        menu_qt.hide()
+        menushka.hide()
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-
     MainWindow = QtWidgets.QMainWindow()
+    Window = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
-
-    Window = QtWidgets.QMainWindow()
     ui_2 = MainWindow_2()
     ui_2.setupUi(Window)
-
-    menu_qt = QtWidgets.QMainWindow()
+    menushka = QtWidgets.QMainWindow()
     menu = Menu_window()
-    menu.setupUi(menu_qt)
-    menu_qt.show()
-
+    menu.setupUi(menushka)
+    menushka.show()
     sys.exit(app.exec_())
