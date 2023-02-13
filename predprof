@@ -11,7 +11,7 @@ from pyqtgraph import PlotWidget, plot
 import pyqtgraph as pg
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox
-
+import requests
 class MainWindow_2(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -74,8 +74,12 @@ class MainWindow_2(object):
         except:
             pass
     def start(self, MainWindow):
-        self.widge.show()
+        url = 'http://esp8266.local/download'
+        req = requests.get(url)
+        print(req.text)
         self.widge.plot([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [30, 32, 34, 32, 33, 31, 29, 32, 35, 45])
+        self.widge.show()
+
 
 
 
